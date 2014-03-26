@@ -1,1 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>DacSmash</id>
+    <version>0.1.0</version>
+    <authors>DacSmash Contributors</authors>
+    <title>DacSmash a dacpac deployer</title>
+    <description>Helper to deploy your SQL Server DataTools .dacpac files in code.</description>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <tags>DacSmash dacpac sqlserver ssdt</tags>
+    <dependencies>
+      <dependency  id="Microsoft.DACFx3" version="1.0.1"/>
+      
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Debug\DacSmash.dll" target="lib\net45"/>
+    <file src="bin\Debug\DacSmash.pdb" target="lib\net45"/>
+  </files>
+</package>
+
