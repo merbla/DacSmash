@@ -57,9 +57,25 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LocalSql to Proj.scmp" />
     <None Include="LocalSql.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Users.sql" />
+    <Build Include="dbo\Tables\Teams.sql" />
+    <Build Include="dbo\Tables\StatisticTypes.sql" />
+    <Build Include="dbo\Tables\StatisticTypeGames.sql" />
+    <Build Include="dbo\Tables\Statistics.sql" />
+    <Build Include="dbo\Tables\StatisticCategoryStatisticTypes.sql" />
+    <Build Include="dbo\Tables\StatisticCategories.sql" />
+    <Build Include="dbo\Tables\Seasons.sql" />
+    <Build Include="dbo\Tables\Players.sql" />
+    <Build Include="dbo\Tables\Leagues.sql" />
+    <Build Include="dbo\Tables\Games.sql" />
+    <Build Include="dbo\Tables\Fixtures.sql" />
   </ItemGroup>
 </Project>
