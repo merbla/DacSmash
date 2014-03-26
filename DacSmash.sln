@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2BCA4E6F-56DB-4411-BCE2-0F333E6DA219}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DacSmash", "DacSmash\DacSmash.csproj", "{825059A7-4A1C-4A5B-9631-1A0FDB6C254B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DacSmash.IntegrationTests", "DacSmash.IntegrationTests\DacSmash.IntegrationTests.csproj", "{18649640-69A4-458F-AFC0-EBA6A7B81D17}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DacSmash.Database", "DacSmash.Database\DacSmash.Database.sqlproj", "{0FDC504A-FDB3-4361-B2CE-A1A25DB7DC72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{825059A7-4A1C-4A5B-9631-1A0FDB6C254B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{825059A7-4A1C-4A5B-9631-1A0FDB6C254B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{825059A7-4A1C-4A5B-9631-1A0FDB6C254B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{825059A7-4A1C-4A5B-9631-1A0FDB6C254B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18649640-69A4-458F-AFC0-EBA6A7B81D17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18649640-69A4-458F-AFC0-EBA6A7B81D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18649640-69A4-458F-AFC0-EBA6A7B81D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18649640-69A4-458F-AFC0-EBA6A7B81D17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FDC504A-FDB3-4361-B2CE-A1A25DB7DC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FDC504A-FDB3-4361-B2CE-A1A25DB7DC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FDC504A-FDB3-4361-B2CE-A1A25DB7DC72}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0FDC504A-FDB3-4361-B2CE-A1A25DB7DC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FDC504A-FDB3-4361-B2CE-A1A25DB7DC72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FDC504A-FDB3-4361-B2CE-A1A25DB7DC72}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
