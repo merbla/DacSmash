@@ -2,10 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>DacSmash</id>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <authors>DacSmash Contributors</authors>
     <title>DacSmash a dacpac deployer</title>
     <description>Helper to deploy your SQL Server DataTools .dacpac files in code.</description>
+    <projectUrl>https://github.com/merbla/DacSmash</projectUrl>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <tags>DacSmash dacpac sqlserver ssdt</tags>
     <dependencies>
