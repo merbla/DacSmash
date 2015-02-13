@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2BCA4E6F-56DB-4411-BCE2-0F333E6DA219}"
 	ProjectSection(SolutionItems) = preProject
@@ -18,6 +18,7 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DacSmash.Database", "DacSma
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3B7C6780-1715-4492-BC83-33B8C9C3C381}"
 	ProjectSection(SolutionItems) = preProject
+		build.ps1 = build.ps1
 		README.md = README.md
 	EndProjectSection
 EndProject

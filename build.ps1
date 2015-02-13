@@ -7,11 +7,11 @@ param(
 
 function Set-AssemblyVersions($informational, $assembly)
 {
-    (Get-Content src/WebJobSentinel/Properties/AssemblyInfo.cs) |
+    (Get-Content DacSmash/Properties/AssemblyInfo.cs) |
         ForEach-Object { $_ -replace """1.0.0.0""", """$assembly""" } |
         ForEach-Object { $_ -replace """1.0.0""", """$informational""" } |
         ForEach-Object { $_ -replace """1.1.1.1""", """$($informational).0""" } |
-        Set-Content src/WebJobSentinel/Properties/AssemblyInfo.cs
+        Set-Content DacSmash/Properties/AssemblyInfo.cs
 }
 
 function Install-NuGetPackages()
@@ -52,7 +52,7 @@ function Invoke-Build($majorMinor, $patch, $customLogger, $notouch)
 {
     $package="$majorMinor.$patch"
 
-    Write-Output "Building WebJobSentinel $package"
+    Write-Output "Building DacSmash $package"
 
     if (-not $notouch)
     {
@@ -64,7 +64,7 @@ function Invoke-Build($majorMinor, $patch, $customLogger, $notouch)
 
     Install-NuGetPackages
     
-    Invoke-MSBuild "WebjobSentinel.sln" $customLogger
+    Invoke-MSBuild "DacSmash.sln" $customLogger
 
     Invoke-NuGetPack $package
 }
