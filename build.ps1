@@ -49,9 +49,9 @@ function Invoke-NuGetPack($version)
         ForEach-Object { Invoke-NuGetPackSpec $_ $version }
 }
 
-function Invoke-Build($majorMinor, $patch, $customLogger, $notouch)
+function Invoke-Build($majorMinor, $customLogger, $notouch)
 {
-    $package="$majorMinor.$patch"
+    $package="$majorMinor"
 
     Write-Output "Building DacSmash $package"
 
@@ -71,4 +71,4 @@ function Invoke-Build($majorMinor, $patch, $customLogger, $notouch)
 }
 
 $ErrorActionPreference = "Stop"
-Invoke-Build $majorMinor $patch $customLogger $notouch
+Invoke-Build $majorMinor $customLogger $notouch
