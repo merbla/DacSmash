@@ -16,7 +16,7 @@ function Set-AssemblyVersions($informational, $assembly)
 
 function Install-NuGetPackages()
 {
-    nuget restore WebJobSentinel.sln
+    nuget restore DacSmash.sln
 }
 
 function Invoke-MSBuild($solution, $customLogger)
@@ -38,19 +38,20 @@ function Invoke-NuGetPackProj($csproj)
 
 function Invoke-NuGetPackSpec($nuspec, $version)
 {
+    Write-Output "Packaging $nuspec"
+
     nuget pack $nuspec -Version $version -OutputDirectory ..\..\
 }
 
 function Invoke-NuGetPack($version)
 {
-    ls src/**/*.csproj |
-        Where-Object { -not ($_.Name -like "*net40*") } |
-        ForEach-Object { Invoke-NuGetPackProj $_ }
+    ls DacSmash/*.nuspec |
+        ForEach-Object { Invoke-NuGetPackSpec $_ $version }
 }
 
-function Invoke-Build($majorMinor, $patch, $customLogger, $notouch)
+function Invoke-Build($majorMinor, $customLogger, $notouch)
 {
-    $package="$majorMinor.$patch"
+    $package="$majorMinor"
 
     Write-Output "Building DacSmash $package"
 
@@ -70,4 +71,4 @@ function Invoke-Build($majorMinor, $patch, $customLogger, $notouch)
 }
 
 $ErrorActionPreference = "Stop"
-Invoke-Build $majorMinor $patch $customLogger $notouch
+Invoke-Build $majorMinor $customLogger $notouch
