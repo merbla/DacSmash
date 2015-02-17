@@ -40,7 +40,7 @@ function Invoke-NuGetPackSpec($nuspec, $version)
 {
     Write-Output "Packaging $nuspec"
 
-    nuget pack $nuspec -Version $version -OutputDirectory ..\..\
+    nuget pack $nuspec -Version $version -OutputDirectory ..\..\ Verbosity detailed
 }
 
 function Invoke-NuGetPack($version)
